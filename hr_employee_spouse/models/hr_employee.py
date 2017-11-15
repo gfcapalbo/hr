@@ -48,7 +48,11 @@ class HrEmployee(models.Model):
             # Add to the spouse partner "spouse" tag.
             self.mapped('partner_spouse_id').with_context(
                 auth_spouse_mod=True).write(
-                    {'category_id': [(4, spouse_tag_id)]}
+                    {
+                        'supplier': False,
+                        'customer': False,
+                        'category_id': [(4, spouse_tag_id)]
+                    }
                 )
         return res
 
