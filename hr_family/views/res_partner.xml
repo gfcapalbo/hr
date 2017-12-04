@@ -4,7 +4,7 @@
     <data>
 
         <record id="respartner_form_add_employer" model="ir.ui.view">
-            <field name="name">res.partnere.view.form.add.employer</field>
+            <field name="name">res.partner.view.form.add.employer</field>
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
